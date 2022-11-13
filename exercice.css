@@ -1,0 +1,112 @@
+body {
+    /* perspective: 1000px; */
+    --transp: 0.5;
+}
+
+.face1 {
+    background-color: rgb(228, 11, 11, var(--transp));
+    transform: translateX(0px) translateY(0px) translateZ(100px);
+    -webkit-transform: translateX(0px) translateY(0px) translateZ(100px);
+    -moz-transform: translateX(0px) translateY(0px) translateZ(100px);
+    -ms-transform: translateX(0px) translateY(0px) translateZ(100px);
+    -o-transform: translateX(0px) translateY(0px) translateZ(100px);
+}
+
+.face2 {
+    transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    background-color: rgb(110, 57, 231, var(--transp));
+    -webkit-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -moz-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -ms-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -o-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+}
+
+.face3 {
+    transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    background-color: rgb(19, 102, 226, var(--transp));
+    -webkit-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -moz-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -ms-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -o-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(100px) ;
+}
+
+.face4 {
+    transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -moz-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -ms-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -o-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    background-color: rgb(75, 197, 75, var(--transp));
+}
+
+.face5 {
+    transform: rotateX(90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -webkit-transform: rotateX(90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -moz-transform: rotateX(90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -ms-transform: rotateX(90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -o-transform: rotateX(90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    background-color: rgb(15, 165, 235, var(--transp));
+}
+
+.face6 {
+    transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -webkit-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -moz-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -ms-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    -o-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(100px) ;
+    background-color: rgb(15, 75, 33, var(--transp));
+}
+
+/*#main {
+    transform-style: preserve-3d;
+    transform: rotate3d(1,1,1,30deg);
+    -webkit-transform: rotate3d(1,1,1,30deg);
+    -moz-transform: rotate3d(1,1,1,30deg);
+    -ms-transform: rotate3d(1,1,1,30deg);
+    -o-transform: rotate3d(1,1,1,30deg);
+}*/
+
+#main {
+    transform-style: preserve-3d;
+    animation: rotateCube 20s ease-in-out infinite;
+    -webkit-animation: rotateCube 20s ease-in-out infinite;
+}
+
+@keyframes rotateCube 
+{
+    50% {
+        transform: rotate3d(0,1,0,360deg);
+        -webkit-transform: rotate3d(0,1,0,360deg);
+        -moz-transform: rotate3d(0,1,0,360deg);
+        -ms-transform: rotate3d(0,1,0,360deg);
+        -o-transform: rotate3d(0,1,0,360deg);
+    }
+
+    60% {
+        transform: rotate3d(1,1,0,90deg);
+        -webkit-transform: rotate3d(1,1,0,90deg);
+        -moz-transform: rotate3d(1,1,0,90deg);
+        -ms-transform: rotate3d(1,1,0,90deg);
+        -o-transform: rotate3d(1,1,0,90deg);
+    }
+    80% {
+        transform: rotate3d(1,1,0,-90deg);
+        -webkit-transform: rotate3d(1,1,0,-90deg);
+        -moz-transform: rotate3d(1,1,0,-90deg);
+        -ms-transform: rotate3d(1,1,0,-90deg);
+        -o-transform: rotate3d(1,1,0,-90deg);
+    }
+
+    100% {
+        transform: rotate3d(1,1,0,0deg);
+        -webkit-transform: rotate3d(1,1,0,0deg);
+        -moz-transform: rotate3d(1,1,0,0deg);
+        -ms-transform: rotate3d(1,1,0,0deg);
+        -o-transform: rotate3d(1,1,0,0deg);
+    }    
+}
+
+
+
+
+

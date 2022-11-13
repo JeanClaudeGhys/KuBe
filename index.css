@@ -1,0 +1,49 @@
+*, body, html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #222;    
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*#main {
+    border: solid 2px red;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}*/
+
+#main {
+    /*border: solid 2px red; /*support 3D*/
+    background-color: rgb(255, 255, 255, 0);
+    position: relative;
+    width: 200px;
+    height: 200px;  
+}
+
+.face {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: consolas;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
